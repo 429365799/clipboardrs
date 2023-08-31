@@ -9,7 +9,7 @@ name = "clipboardrs"
 crate-type = ["lib"]
 
 [dependencies]
-clipboard-win = "4.5.0"
+clipboard-win = { git = "https://github.com/429365799/clipboard-win.git" }
 image = "0.24.6"
 arboard = "3.2.0"
 winapi = "0.3.9"
