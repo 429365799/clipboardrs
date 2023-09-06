@@ -9,8 +9,6 @@ use std::io::Cursor;
 use std::os::raw::c_char;
 use std::{ffi::CStr, fs};
 
-// use crate::windows;
-
 fn open_clipboard() -> Clipboard {
     Clipboard::new_attempts(10).expect("打开剪贴板失败")
 }
@@ -190,3 +188,5 @@ pub fn write_clipboard_data(data: ClipboardData, need_empty: bool) -> SysResult<
 
     Ok(())
 }
+
+fn start_listen_clipboard() {}
